@@ -1,0 +1,14 @@
+#menuFiltre{
+    display: flex;
+    justify-content: center;
+}
+
+.card-custom{
+    background-color: white !important;
+
+}
+
+.refCustom{
+    max-width: 20rem !important; 
+    border: 0px !important;
+}

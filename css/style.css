@@ -12,3 +12,12 @@
     max-width: 20rem !important; 
     border: 0px !important;
 }
+
+.iframeCustom{
+    width: 100%;
+    min-height: 100 vh !important;
+}
+
+iframe{
+    border: 0px;
+}

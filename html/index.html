@@ -43,40 +43,61 @@
 
           <div id="menuFiltre">
 
-            <div style="padding: 20px;">
-              <button type="button" class="btn btn-secondary">Liste</button>
-              <button type="button" class="btn btn-secondary">Carte</button>
-            </div>
+            <a class="nav-link active show btn btn-secondary" data-toggle="tab" href="#home" style="margin: 10px">Liste</a>
+            <a class="nav-link btn btn-secondary" data-toggle="tab" href="#profile" style="margin: 10px">Carte</a>
 
           </div>
 
         </div>
-        <div class="col-10" >
+        <div class="col-10 " >
+          <div class="tab-pane fade active show" id="home">
 
-          <div class="col-4" >  
-            <div class="card mb-3 refCustom">
-              <div class="card-custom card-header">
-                <img src="../imgs/res1.jpg" style="max-width: 280px;">
-              </div>
-              <div class="card-body" style="padding: 10px">
-                  <p>Logement entier · 1 lit <br>
-                    appartement spa hypercentre Nantes<br>
-                  Prix65€ par nuit · Annulation gratuite
-                  </p>
+            <div class="col-4" >  
+              <div class="card mb-3 refCustom">
+                <div class="card-custom card-header">
+                  <img src="../imgs/res1.jpg" style="max-width: 280px;">
+                </div>
+                <div class="card-body" style="padding: 10px">
+                    <p>Logement entier · 1 lit <br>
+                      appartement spa hypercentre Nantes<br>
+                    Prix65€ par nuit · Annulation gratuite
+                    </p>
+                </div>
               </div>
             </div>
+
+            <div class="col-4" >
+              <div class="card mb-3 refCustom">
+                <div class="card-custom card-header">
+                  <img src="../imgs/res2.jpg" style="max-width: 280px;">
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title">Primary card title</h4>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+
           </div>
 
-          <div class="col-4" >
-            <div class="card mb-3 refCustom">
-              <div class="card-custom card-header">
-                <img src="../imgs/res2.jpg" style="max-width: 280px;">
-              </div>
-              <div class="card-body">
-                <h4 class="card-title">Primary card title</h4>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
+          <div class="tab-pane fade show" id="profile">
+
+            <h3>My Google Maps Demo</h3>
+            <div id="map"></div>
+            <script>
+              function initMap() {
+                var uluru = {lat: -25.344, lng: 131.036};
+                var map = new google.maps.Map(
+                    document.getElementById('map'), {zoom: 4, center: uluru});
+                var marker = new google.maps.Marker({position: uluru, map: map});
+              }
+            </script>
+
+            <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9Mc9vn8Zvil30yxyQV0ReL6WK70j9uIE&callback=initMap">
+            </script>
+        
+              
           </div>
 
         </div>
